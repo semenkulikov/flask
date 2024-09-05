@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+from models import init_db
 app = Flask(__name__)
 
 
@@ -9,4 +9,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    init_db()  # Initialize the database before running the app.
+    app.run(debug=True)
