@@ -15,7 +15,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/service_one')
+@app.route('/service-one')
 def service_one():
     return render_template('services/service-one.html')
 
