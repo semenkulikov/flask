@@ -15,6 +15,10 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/service_one')
+def service_one():
+    return render_template('services/service-one.html')
+
 if __name__ == '__main__':
     init_db()  # Initialize the database before running the app.
     app_logger.info("Starting the Flask application...")  # Log the start of the app
